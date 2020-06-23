@@ -1,0 +1,30 @@
+@import url('./tailwind.scss');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  @apply min-h-screen	bg-gray-900 text-gray-100 font-open-sans overflow-x-hidden;
+}
+
+button {
+
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.bg-blur-5 {
+  backdrop-filter: blur(5px);
+}
+.bg-blur-10 {
+  backdrop-filter: blur(10px);
+}
+.bg-blur-20 {
+  backdrop-filter: blur(20px);
+}
+
+.transition {
+  transition: 0.2s ease-out;
+}
