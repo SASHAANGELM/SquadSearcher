@@ -31,6 +31,20 @@ export default new Router({
         name: 'about',
         component: () => import(/* webpackChunkName: "about" */ './pages/About.vue')
       }]
+    },
+    {
+      path: '/test-connection',
+      component: AppTemplate,
+      children: [{
+        path: '',
+        name: 'test-connection',
+        component: () => import(/* webpackChunkName: "about" */ './pages/TestConnection.vue')
+      }]
+    },
+
+    {
+      path: '/auth/wargaming/success',
+      component: () => import(/* webpackChunkName: "about" */ './pages/AuthWargamingSuccess.vue')
     }
   ]
 });
