@@ -3,7 +3,7 @@ import Vuesax from 'vuesax';
 import moment from 'moment';
 
 import '@fortawesome/fontawesome-free/css/all.css';
-import 'vuesax/dist/vuesax.css' //Vuesax styles
+import 'vuesax/dist/vuesax.css'; // Vuesax styles
 
 import './registerServiceWorker';
 import './utils/config';
